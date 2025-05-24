@@ -72,7 +72,7 @@ const Application = () => {
 
     try {
       const { data } = await axios.post(
-        "https://employee_hub.railway.internal/api/v1/application/post",
+        "https://employeehub-production.up.railway.app/api/v1/application/post",
         formData,
         {
           withCredentials: true,

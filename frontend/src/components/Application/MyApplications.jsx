@@ -18,7 +18,7 @@ const MyApplications = () => {
     try {
       if (user && user.role === "Employer") {
         axios
-          .get("https://employee_hub.railway.internal/api/v1/application/employer/getall", {
+          .get("https://employeehub-production.up.railway.app/api/v1/application/employer/getall", {
             withCredentials: true,
           })
           .then((res) => {
@@ -26,7 +26,7 @@ const MyApplications = () => {
           });
       } else {
         axios
-          .get("https://employee_hub.railway.internal/api/v1/application/jobseeker/getall", {
+          .get("https://employeehub-production.up.railway.app/api/v1/application/jobseeker/getall", {
             withCredentials: true,
           })
           .then((res) => {
@@ -45,7 +45,7 @@ const MyApplications = () => {
   const deleteApplication = (id) => {
     try {
       axios
-        .delete(`https://employee_hub.railway.internal/api/v1/application/delete/${id}`, {
+        .delete(`https://employeehub-production.up.railway.app/api/v1/application/delete/${id}`, {
           withCredentials: true,
         })
         .then((res) => {

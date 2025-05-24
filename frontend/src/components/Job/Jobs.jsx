@@ -10,7 +10,7 @@ const Jobs = () => {
   useEffect(() => {
     try {
       axios
-        .get("https://employee_hub.railway.internal/api/v1/job/getall", {
+        .get("https://employeehub-production.up.railway.app/api/v1/job/getall", {
           withCredentials: true,
         })
         .then((res) => {

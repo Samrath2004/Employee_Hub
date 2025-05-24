@@ -18,7 +18,7 @@ const Login = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "https://employee_hub.railway.internal/api/v1/user/login",
+        "https://employeehub-production.up.railway.app/api/v1/user/login",
         { email, password, role },
         {
           headers: {

@@ -31,7 +31,7 @@ const PostJob = () => {
     }
     await axios
       .post(
-        "https://employee_hub.railway.internal/api/v1/job/post",
+        "https://employeehub-production.up.railway.app/api/v1/job/post",
         fixedSalary.length >= 4
           ? {
               title,
